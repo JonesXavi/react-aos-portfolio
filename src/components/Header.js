@@ -20,7 +20,7 @@ const Header = () => (
           <a href="#about" className="nav-link">About</a>
         </li>
         <li>
-          <a href="#portfolio" className="nav-link">Portfolio</a>
+          <a href="#projects" className="nav-link">Projects</a>
         </li>
         <li>
           <a href="#experience" className="nav-link">Experience</a>

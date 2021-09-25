@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
+// Routing
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 // Styles
 import './App.css';
 import 'aos/dist/aos.css';
 
-import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-import Experience from './components/Experience';
+import MainLayout from './components/MainLayout';
+import MoreProjects from './components/MoreProjects';
+import NotFound from './components/NotFound';
 
 const App = () => {
 
@@ -18,13 +19,13 @@ const App = () => {
   }, []);
 
   return(
-    <div>
-      <Header />
-      <About />
-      <Projects />
-      <Experience />
-      <Footer />
-  </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<MainLayout />} />
+        <Route path='/projects' element={<MoreProjects />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </Router>
   )
 };
 

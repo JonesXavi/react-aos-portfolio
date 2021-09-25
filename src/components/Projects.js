@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { ProjectsData } from "../en";
 
 const Projects = () => (
-  <section className="project">
+  <section className="project text-center" id="projects">
     <div className="container">
       <div className="section-heading">
         <h1>{ProjectsData.title}</h1>
@@ -30,6 +31,9 @@ const Projects = () => (
         ))
       }
     </div>
+    <Link to="/projects" className="neon-button">
+    Show More Projects ...
+    </Link>
   </section>
 );
 

@@ -44,6 +44,10 @@ p {
 img {
   width: 100%;
 }
+
+.text-center {
+  text-align: center;
+}
 /*End global*/
 
 /*Start reusable*/
@@ -428,6 +432,95 @@ li {
 .project-action {
   margin-top: 5%;
 }
+
+.wrapper-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 0.2rem;
+}
+
+.mpro-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.projects-container {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  width: 280px;
+  margin: 1.5rem;
+  color: var(--black);
+  height: 100%;
+}
+
+.projects-banner-img {
+  height: 20rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-name {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+
+.projects-description {
+  font-size: 1.3rem;
+  line-height: 20px;
+  margin: 2rem;
+}
+
+.projects-tech-stack {
+  padding: 1rem 1rem;
+  background: #1bb16c;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.3rem;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.github-btn {
+  margin-top: 3rem;
+  width: 50%;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: #ea4c89;
+}
+
+.site-btn {
+  margin-top: 3rem;
+  width: 50%;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: #651fff;
+}
+
+.project-back-btn {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
 /*End project*/
 
 /*Start timeline*/
@@ -606,6 +699,63 @@ li {
 }
 /*End footer*/
 
+/* 404 Image Starts*/
+
+.nf-container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("images/404.png") #151729;
+  border-radius: 5%;
+  box-shadow: 0 15px 30px rgba(0,0,0, 0.5);
+}
+
+.nf-container .content {
+  max-width: 600px;
+  text-align: center;
+  margin: 6em;
+}
+
+.nf-container .content h2 {
+  font-size: 20vw;
+  color: var(--white);
+  line-height: 1em;
+}
+
+.nf-container .content h4 {
+  position: relative;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #111;
+  background: var(--white);
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.nf-container .content p {
+  font-size: 1.5em;
+}
+
+.nf-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ff0562;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 25px;
+  border-bottom: 4px solid #d00d56;
+}
+
+/*404 Image Ends */
+
 /*Start animations*/
 @keyframes pulse {
   0%{
@@ -750,6 +900,12 @@ li {
   .project-description {
     margin: 0;
     order: 2;
+  }
+
+  .project-back-btn {
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding: 6px 10px;
   }
 
   .timeline p {
