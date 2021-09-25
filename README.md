@@ -8,14 +8,6 @@ A Simple Portfolio built with React 17, [AOS] (https://michalsnik.github.io/aos/
 
 To brush up React 17. This is exactly the same [portfolio](https://github.com/JonesXavi/portfolio-aos) site but instead of jQuery, I tried to replicate it with React Js.
 
-## To Do
-
-<Contact Component>
-
-<Scroll to top>
-
-<Side Nav Menu>
-
 
 # Getting Started with Create React App
 
