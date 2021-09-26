@@ -80,7 +80,7 @@ export const ProjectsData = {
       demoUrl: 'https://jonesxavi.github.io/react-tasker',
       githubUrl: 'https://github.com/JonesXavi/react-tasker',
       techStack: [
-        'React', 'HTML 5', 'CSS 3', 'React', 'HTML 5', 'CSS 3'
+        'React', 'HTML 5', 'CSS 3'
       ],
       aos1: {
         type: 'flip-left',
