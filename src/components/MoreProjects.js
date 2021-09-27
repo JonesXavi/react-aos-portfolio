@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import { ProjectsData } from "../en";
 
-const MoreProjects = () => (
+const MoreProjects = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
+
+  return (
   <section>
     <div className="mpro-container">
       <Link to="/" className="nf-btn project-back-btn">
@@ -36,6 +43,7 @@ const MoreProjects = () => (
       </div>
     </div>
   </section>
-);
+  )
+};
 
 export default MoreProjects;

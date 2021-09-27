@@ -99,7 +99,7 @@ export const WorkExperience = {
   subTitle: 'Past and current jobs',
   experienceList: [
     {
-      role: 'Senior Web Developer',
+      role: 'Senior App Developer',
       company: 'BNY Mellon',
       duration: 'August 2019 - Present',
       responsibilites: 'Started off as a Senior front-end dev to become a full stack developer, working on Angular, Sprint Boot and Mongodb. Mentored juniors and conducted tech training sessions within the organization. Uplifted my leadership quality by leading a micro team.'

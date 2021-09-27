@@ -1,8 +1,8 @@
-# A Simple React Portfolio
+# A Simple React Portfolio [DEMO](http://www.jonesxavi.tech)
 
 ## What ?
 
-A Simple Portfolio built with React 17, [AOS] (https://michalsnik.github.io/aos/). This is exactly 
+A Simple Portfolio built with React 17, [AOS](https://michalsnik.github.io/aos/). This is exactly 
 
 ## Why ?
 
