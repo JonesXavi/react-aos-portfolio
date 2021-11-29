@@ -6,7 +6,7 @@ const NotFound = () => (
     <div data-aos="fade-right" data-aos-delay="200" className="content">
       <h2>404</h2>
       <h4>Oops! Page not found</h4>
-      <p>The page you were lookking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+      <p>The page you are looking for, doesn't exist or you might have mistyped the address.</p>
       <Link to="/" className="nf-btn">
         <i className="fas fa-chevron-left"></i> Back to Main Page
       </Link>

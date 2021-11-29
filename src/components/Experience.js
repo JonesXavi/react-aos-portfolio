@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 
+import ExperienceCard from './ExperienceCard';
 import { WorkExperience } from '../en';
 
 const Experience = () => (
@@ -9,20 +10,21 @@ const Experience = () => (
         <h1>{WorkExperience.title}</h1>
         <h6>{WorkExperience.subTitle}</h6>
       </div>
-      <div className="timeline" data-aos="zoom-in-up" data-aos-delay="600">
-        <ul>
-          {
-            WorkExperience.experienceList.map((item, index) => (
-              <li className="date" key={index}>
-                <h1>{item.role} - {item.company}</h1>
-                <h6>{item.duration}</h6>
-                <p>
-                    {item.responsibilites}
-                </p>
-              </li>
-            ))
-          }
-        </ul>
+      <div className="experience-cards-div">
+        {WorkExperience.experienceList.map((card, i) => {
+          return (
+            <ExperienceCard key={i} 
+              cardInfo={{
+                role: card.role,
+                company: card.company,
+                companylogo: card.companylogo,
+                duration: card.duration,
+                desc: card.responsibilites,
+                aos: card.aos
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   </section>

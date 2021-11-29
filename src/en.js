@@ -6,8 +6,72 @@ export const HeaderData = {
 export const AboutData = {
   title: 'About',
   subTitle: 'Myself',
-  content: `Hi, I am Jones Bastin Xavier a Full Stack Web Developer from India. I create webapps that are fast, easy to use and build with best practices & utmost dedication. I work to make websites more responsive, interactive, simple, beautiful, and user-friendly. I am hungry to learn new things and produce something that could revolutionize the Internet one day. I love cooking things up by leveraging JavaScript to build responsive web apps, hybrid mobile apps and interactive features that drive business growth.Prowess in Angular, React JS. Take a look at my portfolio!`,
+  content: `Hi, I am Jones Bastin Xavier a passionate Full Stack Software Developer from India. I stay hungry to learn new things and produce something that could revolutionize the Internet one day. I love cooking things up by leveraging JavaScript to build responsive web apps, hybrid mobile apps and interactive features that drive business growth. Prowess in Angular, React JS. Take a look at my portfolio!`,
   profileImg: '../images/profile.jpeg'
+};
+export const skillsSection = {
+  title: "Skills",
+  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+
+  softwareSkills: [
+    {
+      skillName: "HTML5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "CSS3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "SASS",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
+      skillName: "React Js",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Node Js",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "Stripe",
+      fontAwesomeClassname: "fab fa-cc-stripe"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Mongo DB",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "AWS S3",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
 };
 
 export const ProjectsData = {
@@ -48,11 +112,11 @@ export const ProjectsData = {
       ],
       aos1: {
         type: 'slide-left',
-        delay: 600
+        delay: 200
       },
       aos2: {
         type: 'slide-right',
-        delay: 800
+        delay: 400
       }
     }, {
       title: 'Calculator',
@@ -66,11 +130,11 @@ export const ProjectsData = {
       ],
       aos1: {
         type: 'flip-up',
-        delay: 1000
+        delay: 200
       },
       aos2: {
         type: 'flip-down',
-        delay: 1200
+        delay: 400
       }
     }, {
       title: 'Tasker',
@@ -84,11 +148,11 @@ export const ProjectsData = {
       ],
       aos1: {
         type: 'flip-left',
-        delay: 1400
+        delay: 200
       },
       aos2: {
         type: 'flip-right',
-        delay: 1600
+        delay: 400
       }
     }
   ]
@@ -101,13 +165,23 @@ export const WorkExperience = {
     {
       role: 'Senior App Developer',
       company: 'BNY Mellon',
+      companylogo: './images/bny.jpg',
       duration: 'August 2019 - Present',
-      responsibilites: 'Started off as a Senior front-end dev to become a full stack developer, working on Angular, Sprint Boot and Mongodb. Mentored juniors and conducted tech training sessions within the organization. Uplifted my leadership quality by leading a micro team.'
+      responsibilites: 'Started off as a Senior front-end dev to become a full stack developer, working on Angular, Sprint Boot and Mongodb. Mentored juniors and conducted tech training sessions within the organization. Uplifted my leadership quality by leading a micro team.',
+      aos: {
+        type: 'slide-left',
+        delay: 700
+      }
     }, {
       role: 'Consultant',
       company: 'Virtusa',
+      companylogo: './images/virtusa.jpg',
       duration: 'May 2014 - July 2019',
-      responsibilites: 'Started my IT career here as a Junior Web Developer. Started off with Vanilla JS & jQuery to become an Angular JS and React JS developer. Built reusable UI components to optimize work across various apps. Experience in developing cross browser compatible web apps.'
+      responsibilites: 'Started my IT career here as a Junior Web Developer. Started off with Vanilla JS & jQuery to become an Angular JS and React JS developer. Built reusable UI components to optimize work across various apps. Experience in developing cross browser compatible web apps.',
+      aos: {
+        type: 'slide-right',
+        delay: 700
+      }
     }
   ]
 };

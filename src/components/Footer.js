@@ -1,15 +1,21 @@
 import React from 'react'
 
-// Styles
-import '@fortawesome/fontawesome-free/css/all.min.css';
+const Footer = () => {
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  };
 
-const Footer = () => (
-  <footer className="copyright">
-    <div className="up" id="up">
-      <i className="fas fa-chevron-up"></i>
-    </div>
-    <p>Portfolio made with  <i className="fas fa-heart" style={{color: 'red'}}></i></p>
-  </footer>
-);
+  return(
+    <footer className="copyright">
+      <div className="up" id="up">
+        <i className="fas fa-chevron-up" onClick={scrollToTop}></i>
+      </div>
+      <p>Portfolio made with  <i className="fas fa-heart" style={{color: 'red'}}></i></p>
+    </footer>
+  )
+};
 
 export default Footer;

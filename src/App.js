@@ -5,6 +5,7 @@ import AOS from 'aos';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Styles
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 import 'aos/dist/aos.css';
 

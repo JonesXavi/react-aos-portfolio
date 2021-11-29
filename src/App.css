@@ -15,7 +15,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #eee;
 }
 
@@ -61,7 +61,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
@@ -336,44 +336,35 @@ li {
 
 /*End about*/
 
-/*Start services*/
-.my-skills{
-  margin-top: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
+/*Start Skills*/
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-align: center;
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.skill h1{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 2rem -2px 2rem 0;
+.software-skill-inline > i {
+  color: #efefef;
 }
 
-.icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 3px solid var(--gradient1);
-  background-color: var(--gradient2);
-  margin-bottom: 2rem;
-  display: flex;
-  transform: rotate(45deg);
+.software-skill-inline > i:hover {
+  color: #645beb;
 }
-
-.icon-container i {
-  color: var(--gradient1);
-  font-size: 5rem;
-  margin: auto;
-  transform: rotate(-45deg);
+.software-skill-inline > p {
+  color: #d0d0d0;
+  font-size: 12px;
+}
+.software-skill-inline > i:hover ~ p {
+  color: #645beb;
 }
 /*End services*/
 
@@ -384,7 +375,6 @@ li {
   justify-content: center;
   margin-bottom: 5rem;
 }
-
 .project-item:last-child {
   margin-bottom: 0;
 }
@@ -396,7 +386,6 @@ li {
 .project-description {
   flex: 1;
 }
-
 .project-description h1 {
   font-size: 3rem;
 
@@ -407,7 +396,6 @@ li {
   font-weight: 600;
   opacity: 0.3;
 }
-
 .project-description .cta {
   display: inline-block;
   margin-top: 2.5rem;
@@ -416,7 +404,6 @@ li {
   color: #3883ff;
   transition: color 650ms;
 }
-
 .project-description .cta:hover{
   color: #2f67cd;
 }
@@ -433,164 +420,228 @@ li {
   margin-top: 5%;
 }
 
-.wrapper-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  grid-gap: 0.2rem;
-}
-
-.mpro-container {
+.projects-container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
-.projects-container {
-  overflow: hidden;
-  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: var(--white);
-  text-align: center;
-  border-radius: 1rem;
-  position: relative;
-  width: 280px;
-  margin: 1.5rem;
-  color: var(--black);
-  height: 100%;
-}
 
-.projects-banner-img {
-  height: 20rem;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.projects-name {
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin: 1rem auto;
-}
-
-.projects-description {
-  font-size: 1.3rem;
-  line-height: 20px;
-  margin: 2rem;
-}
-
-.projects-tech-stack {
-  padding: 1rem 1rem;
-  background: #1bb16c;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0.3rem;
-  color: var(--white);
-  border-radius: 10px;
-}
-
-.github-btn {
-  margin-top: 3rem;
-  width: 50%;
-  border: none;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  padding: 1rem;
-  background-color: #ea4c89;
-}
-
-.site-btn {
-  margin-top: 3rem;
-  width: 50%;
-  border: none;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  padding: 1rem;
-  background-color: #651fff;
-}
-
-.project-back-btn {
-  font-size: 1.5rem;
+.projects-back-btn {
+  font-size: 2.2rem;
   margin-left: 3rem;
+  margin-top: 0 !important;
+  padding: 7px 18px !important;
+}
+
+.projects-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem 1rem;
+  gap: 2rem 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.397);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+}
+
+.project-title {
+  color: #151729;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.project-subtitle {
+  color: #666666;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.project-external-links-icon {
+  font-size: 3rem;
+  line-height: 1.5rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+.project-external-links-icon a {
+  margin: 1.5rem;
+  color: #151729;
+}
+.project-external-links-icon a > i:hover {
+  color: #8c43ce;
+}
+
+.project-image-div {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+.project-card-footer span.project-tag {
+  background: #55198b;
+  /* background: #1bb16c; */
+  color: #f5f2f4;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 1.2rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  transition: 0.2s ease-in;
+}
+span.project-tag:hover {
+  background: #8c43ce;
 }
 
 /*End project*/
 
-/*Start timeline*/
-.timeline ul{
-  border-left: 4px solid var(--gradient1);
-  border-radius: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin: 0 auto;
+/*Start Work Experience*/
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.experience-card {
   position: relative;
-  padding: 5rem;
-  list-style: none;
-  text-align: left;
-  width: 70%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.397);
 }
 
-.timeline h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  opacity: 0.7;
+.experience-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
 
-.timeline h6 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  opacity: 0.7;
+.experience-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  border-radius: 10px 10px 0px 0px;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.timeline .date {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  position: relative;
-}
-
-.timeline .date:last-of-type{
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-
-.timeline .date::before,
-.timeline .date::after {
+.experience-blurred_div {
   position: absolute;
-  display: block;
-  top: 50%;
-  transform: translateY(-50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2));
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  height: 11rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
-.timeline .date::before {
-  content: attr(data-date);
-  left: -21rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.5rem;
+.experience-div-company {
+  position: absolute;
+  background: transparent;
+  height: 9rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.timeline .date::after {
-  content: '';
-  box-shadow: 0 0 0 4px var(--gradient2);
-  border-radius: 100%;
-  left: -8rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: #313534;
+.experience-text-company {
+  padding: 1.5rem;
+  margin: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-/*End timeline*/
+
+.experience-roundedimg {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.experience-text-role {
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 1.5rem;
+  line-height: normal;
+}
+
+.experience-text-date {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  margin: 0px;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+
+.experience-text-desc {
+  color: #868e96;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.experience-text-details {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/*End Work Experience*/
 
 /*Start contact*/
 .contact ul {
@@ -803,7 +854,7 @@ li {
   }
 
   .about-heading h1, .section-heading h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   .about-details .nav-list {
@@ -822,29 +873,14 @@ li {
     width: 19%;
   }
 
-  .icon-container {
-    width: 7rem;
-    height: 7rem;
-  }
-
-  .icon-container i{
-    font-size: 4rem;
-  }
-
-  .timeline ul {
-    margin: 0 0 0 auto;
-  }
-
-  .timeline .date::before {
-    left: -20rem;
-  }
-
-  .timeline .date::after {
-    left: -5.9rem;
-  }
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 28px;
+  }
   .menu-toggler {
     top: 2rem;
     right: 1rem;
@@ -861,7 +897,7 @@ li {
   }
 
   .about-heading h1, .section-heading h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .skill h1 {
@@ -908,14 +944,13 @@ li {
     padding: 6px 10px;
   }
 
-  .timeline p {
-    font-size: 1.6rem;
+  .experience-text-company {
+    font-size: 2rem;
   }
 
-  .timeline .date::before {
-    font-size: 1.4rem;
+  .experience-text-role {
+    font-size: 1.8rem;
   }
-
   .up {
     right: 2rem;
   }
